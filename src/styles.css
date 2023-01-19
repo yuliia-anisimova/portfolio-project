@@ -13,9 +13,9 @@ body {
 header {
   width: 100%;
   height: 100vh;
-  /* background-image: url(/images/background.jpg);
-    background-size: cover;
-    background-position: center; */
+  background-image: url(/images/background.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .container {
@@ -25,69 +25,90 @@ header {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 10px 20px;
+  margin: 10px 30px;
 }
 
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
+  font-weight: 500;
   position: relative;
 }
 
-.nav-link:after {
+nav ul li a::after {
   content: "";
   width: 0;
   height: 3px;
-  background: #1007fa;
+  background: #adf700;
   position: absolute;
   left: 0;
   bottom: -6px;
   transition: 0.5s;
 }
 
-.nav-link:hover::after {
+nav ul li a:hover::after {
   width: 100%;
 }
 
-.header-text {
-  padding: 50px;
+.hero-text {
+  margin-top: 20%;
+  font-size: 25px;
 }
 
-.main-heading {
-  font-size: 96px;
+.hero-text h1 {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.hero-text h1 span {
+  color: #adf700;
   font-weight: bold;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.name {
-  color: #1007fa;
-}
-
-.sub-heading {
-  font-size: 24px;
-  text-align: center;
-}
-
-.contact {
-  display: flex;
-  justify-content: center;
 }
 
 .btn-branding {
+  padding: 10px 15px;
+  border: 1px solid #adf700;
+}
+
+.btn-branding a {
   color: #ffffff;
-  border: 1px solid #1007fa;
-  padding: 15px 20px;
+  text-decoration: none;
 }
 
 .btn-branding:hover {
-    background: #1007fa;
+  border: 1px solid #adf700;
+  font-size: larger;
+  box-shadow: 0px 0px 20px rgba(173, 247, 0, 0.2);
+}
+
+.social-links a {
+  margin: 0 20px;
+  color: #adf700;
+  background: #353535;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+.social-links a:hover {
+  color: #353535;
+  background: #adf700;
+}
+
+footer p {
+  color: #525252;
+  font-size: 15px;
+}
+
+footer p a {
+  color: #525252;
 }
