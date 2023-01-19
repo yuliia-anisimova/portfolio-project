@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #080808;
+  background: #212529;
   color: #ffffff;
 }
 
@@ -18,44 +18,16 @@ header {
   background-position: center;
 }
 
+.logo {
+  font-weight: 900;
+}
+
+.logo-letter {
+  color: #adf700;
+}
+
 .container {
   padding: 10px 10%;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 10px 30px;
-}
-
-nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  position: relative;
-}
-
-nav ul li a::after {
-  content: "";
-  width: 0;
-  height: 3px;
-  background: #adf700;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: 0.5s;
-}
-
-nav ul li a:hover::after {
-  width: 100%;
 }
 
 .hero-text {
@@ -70,7 +42,6 @@ nav ul li a:hover::after {
 
 .hero-text h1 span {
   color: #adf700;
-  font-weight: bold;
 }
 
 .btn-branding {
@@ -111,4 +82,18 @@ footer p {
 
 footer p a {
   color: #525252;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-text {
+    font-size: 16px;
+  }
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  footer p {
+    font-size: 10px;
+  }
 }
