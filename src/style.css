@@ -97,3 +97,17 @@ footer p a {
     font-size: 10px;
   }
 }
+
+/* About page */
+
+/* main {
+  height: 100vh;
+} */
+
+.contact-box {
+  padding: 30px 120px;
+  border-radius: 10px;
+  background: #2b2b2b;
+  margin: 0 auto;
+  width: 50%;
+}
